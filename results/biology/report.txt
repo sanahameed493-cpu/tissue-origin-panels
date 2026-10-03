@@ -1,0 +1,103 @@
+STEP 6 REPORT: biological interpretation
+============================================================
+All-genes CPTAC macro F1 (expression): 0.816
+Pre-specified 'smallest reliable panel' (within 0.02 of all genes): 20 genes
+Also described (additional): 100 genes, the size with the best external accuracy.
+Stable core = genes selected in at least 4 of 5 seeds.
+
+--- 20-gene panel (prespecified) ---
+Genes ever selected: 22; stable core: 19; on the known-marker list: 5
+Stable-core genes per cancer type (highest mean expression):
+  BRCA  (2): GATA3, ESRP1
+  CRC   (5): NOX1, TSPAN8, EPCAM, AP1M2, RAB25
+  HNSC  (2): TP63, PKP3
+  KIRC  (2): GAL3ST1, HNF1B
+  OV    (2): SOX17, PAX8
+  PRAD  (6): ACP3, SLC45A3, NKX3-1, SLC30A4, TMPRSS2, GRHL2
+
+--- 100-gene panel (additional) ---
+Genes ever selected: 109; stable core: 97; on the known-marker list: 8
+Stable-core genes per cancer type (highest mean expression):
+  BRCA  (7): GATA3, TRPS1, PRLR, EFHD1, ESR1, TFAP2C, ESRP1
+  CRC   (26): NOX1, CCL24, GPR35, FAM3D, FUT4, CEACAM5, FOXA3, IL22RA1, TSPAN8, GPX2, FERMT1, HKDC1, FOXA2, CYP2S1, TMEM171, AMN, PRR15L, EPCAM, KLF5, TMPRSS4, TJP3, KRT8, KRT18, BAIAP2L1, AP1M2, RAB25
+  GBM   (2): SALL1, METTL7B
+  HNSC  (18): KRT14, KRT16, KRT6B, KRT6A, CSTA, SOX15, DSC3, FGFBP1, TP63, KRT5, PKP1, LYPD3, SFN, TMEM79, IRF6, LAD1, PKP3, NECTIN4
+  KIRC  (9): ENPEP, CLTRN, RBP5, BHMT2, SEMA5B, GAL3ST1, CDH6, HNF1B, SMIM24
+  LUAD  (1): CEACAM6
+  OV    (6): SOX17, PAX8, CLDN3, HMGA1, OVOL2, CNKSR1
+  PAAD  (1): SPINK1
+  PRAD  (23): ACP3, SLC45A3, NKX3-1, RDH11, SLC30A4, ANO7, FOLH1, GNMT, HOXB13, ARHGAP6, TMPRSS2, CREB3L4, SLC4A4, HOMER2, SPDEF, FOXA1, ZG16B, AR, AZGP1, C9orf152, HID1, GRHL2, TMEM30B
+  SKCM  (1): PMEL
+  STAD  (2): GATA6, AGR2
+  UCEC  (1): KDF1
+
+--- Most informative gene-pair rules (100 genes, seed 0) ---
+cancer               rule  weight   first_gene_marker second_gene_marker
+  BRCA      TRPS1 > RDH11   0.053                                       
+  BRCA   TRPS1 > BAIAP2L1   0.049                                       
+  BRCA        PRLR > CDH6   0.043                                       
+  BRCA      GATA3 > FOXA1   0.043 breast / urothelium                   
+  BRCA     GATA3 > CNKSR1   0.042 breast / urothelium                   
+   CRC    EPCAM > CEACAM6   0.075                                       
+   CRC      PRR15L > LAD1   0.074                                       
+   CRC       PMEL > EFHD1   0.072          melanocyte                   
+   CRC       NOX1 > HNF1B   0.072                                       
+   CRC    TMPRSS4 > GATA6   0.071                                       
+   GBM       SALL1 > KRT8   0.023                                       
+   GBM  SLC4A4 > BAIAP2L1   0.023                                       
+   GBM   SALL1 > BAIAP2L1   0.021                                       
+   GBM ARHGAP6 > BAIAP2L1   0.021                                       
+   GBM       GPR35 > KRT8   0.020                                       
+  HNSC       EFHD1 > RBP5   0.115                                       
+  HNSC    EFHD1 > METTL7B   0.101                                       
+  HNSC      ANO7 > SPINK1   0.099                                       
+  HNSC     GPR35 > SPINK1   0.099                                       
+  HNSC    TRPS1 > CREB3L4   0.097                                       
+  KIRC      KRT18 > HMGA1   0.044                                       
+  KIRC       KRT8 > HMGA1   0.038                                       
+  KIRC       HNF1B > HID1   0.034                                       
+  KIRC        HNF1B > EHF   0.031                                       
+  KIRC       BHMT2 > HID1   0.030                                       
+  LUAD        PMEL > ANO7   0.110          melanocyte                   
+  LUAD        TP63 > DSC3   0.097 squamous epithelium                   
+  LUAD       TP63 > KRT6B   0.085 squamous epithelium                   
+  LUAD      CLTRN > BHMT2   0.082                                       
+  LUAD       TP63 > SALL1   0.081 squamous epithelium                   
+  LUSC      EPCAM > KRT18   0.120                                       
+  LUSC     SPINK1 > BHMT2   0.119                                       
+  LUSC      SLC4A4 > CDH6   0.100                                       
+  LUSC     TSPAN8 > BHMT2   0.099                                       
+  LUSC    GAL3ST1 > SALL1   0.099                                       
+    OV   TSPAN8 > TMPRSS2   0.058                               prostate
+    OV     ESRP1 > PRR15L   0.053                                       
+    OV      CLDN3 > KRT18   0.053                                       
+    OV    OVOL2 > CREB3L4   0.050                                       
+    OV       GATA6 > AGR2   0.049                                       
+  PAAD    CREB3L4 > FOXA1   0.098                                       
+  PAAD     SLC4A4 > FOXA1   0.092                                       
+  PAAD      OVOL2 > FOXA1   0.088                                       
+  PAAD      GRHL2 > FOXA1   0.087                                       
+  PAAD      BHMT2 > SOX15   0.078                                       
+  PRAD     NKX3-1 > HMGA1   0.020            prostate                   
+  PRAD    TMPRSS2 > HMGA1   0.019            prostate                   
+  PRAD     HOXB13 > HMGA1   0.019                                       
+  PRAD    SLC45A3 > HMGA1   0.019                                       
+  PRAD       ACP3 > HMGA1   0.018                                       
+  SKCM        PMEL > KLF5   0.048          melanocyte                   
+  SKCM       PMEL > KRT18   0.048          melanocyte                   
+  SKCM    PMEL > BAIAP2L1   0.047          melanocyte                   
+  SKCM      PMEL > TMEM79   0.046          melanocyte                   
+  SKCM       PMEL > HMGA1   0.046          melanocyte                   
+  STAD    OVOL2 > CREB3L4   0.127                                       
+  STAD     SLC30A4 > RBP5   0.117                                       
+  STAD     SLC30A4 > PMEL   0.100                             melanocyte
+  STAD       ESRP1 > IRF6   0.093                                       
+  STAD       SOX17 > RBP5   0.090                                       
+  UCEC         SFN > KLF5   0.068                                       
+  UCEC     SALL1 > SLC4A4   0.062                                       
+  UCEC       RBP5 > SOX15   0.061                                       
+  UCEC     SMIM24 > GATA6   0.058                                       
+  UCEC   FOXA2 > C9orf152   0.056                                       
+
+For pathway enrichment, paste enrichr_<size>_genes.txt into Enrichr or g:Profiler,
+and in g:Profiler use background_all_genes.txt as a custom background.

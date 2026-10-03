@@ -1,0 +1,7 @@
+cohort,size,estimate,ci_low,ci_high,ci_excludes_0_positive
+cptac,10,0.0507,0.0284,0.0739,True
+cptac,20,0.0185,0.0037,0.033,True
+cptac,50,0.0168,0.0053,0.0292,True
+met500,10,-0.0023,-0.0762,0.0678,False
+met500,20,0.0393,-0.0208,0.1076,False
+met500,50,0.0475,0.0019,0.0983,True

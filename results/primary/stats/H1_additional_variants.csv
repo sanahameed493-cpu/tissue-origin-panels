@@ -1,0 +1,7 @@
+cohort,feature,sizes,slope_per_doubling,ci_low,ci_high,supported
+cptac,expression,"10,20,50,100,150,250,500,all",0.0074,0.0055,0.0094,False
+cptac,expression,"10,20,50,100,150,250,500",0.0012,-0.0027,0.0052,False
+cptac,pairs,"10,20,50,100,150",0.0026,-0.0032,0.0088,False
+met500,expression,"10,20,50,100,150,250,500,all",0.0165,0.0103,0.0229,False
+met500,expression,"10,20,50,100,150,250,500",0.0101,-0.0031,0.023,False
+met500,pairs,"10,20,50,100,150",0.0128,-0.0061,0.0303,False

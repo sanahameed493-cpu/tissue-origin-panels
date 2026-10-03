@@ -1,0 +1,2 @@
+cohort,feature,sizes,slope_per_doubling,ci_low,ci_high,supported
+cptac,expression,"10,20,50,100,150,250,500,all",0.0074,0.0055,0.0094,False

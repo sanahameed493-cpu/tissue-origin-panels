@@ -1,0 +1,10 @@
+# Downloaded and processed data are large: never commit them
+data/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+results/**/runs/
+results/quick/
+results/secondary/quick_*/

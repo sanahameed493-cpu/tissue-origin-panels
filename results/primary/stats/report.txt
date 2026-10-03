@@ -1,0 +1,148 @@
+STEP 4 REPORT
+============================================================
+
+PRE-SPECIFIED TEST H1 (CPTAC, expression): slope of gap per doubling of panel size
+  slope = +0.0074  95% CI [+0.0055, +0.0094]
+  H1 supported (negative, CI excludes 0)? NO
+
+PRE-SPECIFIED TEST H2: gap(expression) - gap(pairs); positive = pairs smaller gap
+  CPTAC   10 genes: +0.051  [+0.028, +0.074]
+  CPTAC   20 genes: +0.019  [+0.004, +0.033]
+  CPTAC   50 genes: +0.017  [+0.005, +0.029]
+  CPTAC (primary): positive with CI excluding 0 at 3 of 3 sizes -> H2 SUPPORTED
+  MET500  10 genes: -0.002  [-0.076, +0.068]
+  MET500  20 genes: +0.039  [-0.021, +0.108]
+  MET500  50 genes: +0.048  [+0.002, +0.098]
+  MET500 (supporting): positive with CI excluding 0 at 1 of 3 sizes -> H2 NOT supported
+
+ADDITIONAL A (not pre-specified): external macro F1, pairs minus expression
+  CPTAC   10 genes: -0.052  [-0.070, -0.035]
+  CPTAC   20 genes: -0.003  [-0.015, +0.008]
+  CPTAC   50 genes: +0.025  [+0.014, +0.036]
+  CPTAC  100 genes: +0.022  [+0.014, +0.028]
+  CPTAC  150 genes: +0.026  [+0.018, +0.035]
+  MET500  10 genes: -0.072  [-0.143, -0.001]
+  MET500  20 genes: +0.019  [-0.041, +0.088]
+  MET500  50 genes: +0.054  [+0.008, +0.104]
+  MET500 100 genes: +0.016  [-0.025, +0.061]
+  MET500 150 genes: +0.040  [-0.001, +0.086]
+
+ADDITIONAL B (not pre-specified): H1 slope variants
+  CPTAC  expression sizes 10,20,50,100,150,250,500,all: +0.0074 [+0.0055, +0.0094]
+  CPTAC  expression sizes 10,20,50,100,150,250,500: +0.0012 [-0.0027, +0.0052]
+  CPTAC  pairs      sizes 10,20,50,100,150: +0.0026 [-0.0032, +0.0088]
+  MET500 expression sizes 10,20,50,100,150,250,500,all: +0.0165 [+0.0103, +0.0229]
+  MET500 expression sizes 10,20,50,100,150,250,500: +0.0101 [-0.0031, +0.0230]
+  MET500 pairs      sizes 10,20,50,100,150: +0.0128 [-0.0061, +0.0303]
+
+ADDITIONAL C (not pre-specified): where models fail
+
+  Per-class sensitivity, CPTAC (mean over seeds):
+model      expression 100  expression all  pairs 100
+class n                                             
+BRCA  132           0.985           0.985      0.985
+CRC   106           1.000           0.994      1.000
+GBM   193           1.000           1.000      0.991
+HNSC  110           0.827           0.955      0.880
+KIRC  223           0.996           0.996      0.996
+LUAD  228           0.897           0.995      0.937
+LUSC  109           0.919           0.620      0.928
+OV    101           0.816           0.693      0.899
+PAAD  161           0.984           0.973      0.953
+SKCM  162           0.935           0.901      0.969
+STAD  151           0.307           0.021      0.374
+UCEC  240           0.988           0.992      0.994
+
+  Per-class sensitivity, MET500 (mean over seeds):
+model     expression 100  expression all  pairs 100
+class n                                            
+BRCA  92           0.917           0.802      0.917
+CRC   11           0.709           0.764      0.782
+GBM   5            1.000           1.000      1.000
+HNSC  24           0.450           0.292      0.475
+OV    13           0.538           0.708      0.738
+PAAD  14           0.657           0.486      0.486
+PRAD  91           0.851           0.666      0.866
+SKCM  13           0.615           0.769      0.600
+STAD  8            0.250           0.125      0.250
+
+  Most common errors, CPTAC, expression 100 (per seed):
+STAD -> PAAD    66.8
+STAD -> CRC     33.0
+HNSC -> LUSC    16.8
+OV -> UCEC      15.4
+LUAD -> LUSC    15.0
+LUAD -> PAAD     8.2
+SKCM -> GBM      7.0
+LUSC -> LUAD     3.8
+
+  Most common errors, CPTAC, pairs 100 (per seed):
+STAD -> PAAD    51.8
+STAD -> CRC     39.2
+HNSC -> LUSC    11.6
+LUAD -> LUSC     9.6
+OV -> UCEC       7.2
+LUAD -> PAAD     4.6
+SKCM -> GBM      3.8
+PAAD -> LUSC     3.6
+
+  Most common errors, CPTAC, expression all (per seed):
+STAD -> PAAD    70.8
+STAD -> CRC     64.8
+LUSC -> LUAD    28.0
+OV -> BRCA      12.2
+STAD -> LUAD    11.0
+SKCM -> BRCA     9.4
+LUSC -> HNSC     9.2
+OV -> UCEC       8.6
+
+  Most common errors, MET500, expression 100 (per seed):
+HNSC -> LUSC    13.0
+OV -> UCEC       4.8
+PRAD -> LUAD     4.2
+BRCA -> KIRC     3.6
+PRAD -> LUSC     3.4
+PRAD -> UCEC     3.0
+STAD -> KIRC     2.8
+STAD -> PAAD     2.0
+
+  Most common errors, MET500, pairs 100 (per seed):
+HNSC -> LUSC    11.8
+PRAD -> LUAD     5.4
+STAD -> KIRC     3.6
+OV -> UCEC       3.0
+PRAD -> UCEC     2.6
+PAAD -> STAD     2.6
+SKCM -> GBM      2.4
+BRCA -> LUSC     2.2
+
+  Most common errors, MET500, expression all (per seed):
+HNSC -> LUSC    13.2
+PRAD -> UCEC    10.0
+PRAD -> OV       8.4
+BRCA -> OV       8.4
+PRAD -> CRC      3.4
+BRCA -> STAD     2.8
+PRAD -> PAAD     2.8
+PAAD -> LUAD     2.8
+
+  MET500 accuracy by biopsy site and tumour content:
+model                     expression 100  expression all  pairs 100
+grouping group       n                                             
+site     adrenal     1             1.000           1.000      1.000
+         bladder     3             1.000           0.800      1.000
+         bone_marrow 40            0.895           0.630      0.920
+         brain       9             1.000           0.867      1.000
+         breast      2             0.600           0.900      0.500
+         colon       2             0.500           0.600      0.900
+         liver       73            0.668           0.597      0.652
+         lung        15            0.560           0.493      0.520
+         lymph_node  73            0.882           0.819      0.918
+         oral        2             0.100           0.000      0.000
+         pancreas    1             1.000           1.000      1.000
+         prostate    1             1.000           1.000      1.000
+         skin        14            0.743           0.800      0.771
+         soft_tissue 35            0.754           0.526      0.760
+tc       high (>0.6) 133           0.812           0.717      0.802
+         low (<=0.4) 71            0.746           0.575      0.783
+         mid         67            0.755           0.681      0.779
