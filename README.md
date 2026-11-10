@@ -59,9 +59,9 @@ Full results are in the `results/` folder: summary tables (`results/primary/summ
 
 ## Paper and citation
 
-Preprint: [link to be added after posting on bioRxiv]
+Preprint: Hameed S. Panel Size and Rank-Based Gene Pairs in Cross-Cohort Tumour Tissue-of-Origin Classification from RNA Sequencing. Zenodo; 2026. https://doi.org/10.5281/zenodo.24105798 
 
-Software DOI: [Zenodo DOI to be added]
+Software DOI: https://doi.org/10.5281/zenodo.23124509
 
 ## How to reproduce
 
